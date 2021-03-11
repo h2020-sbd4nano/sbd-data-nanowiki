@@ -7,13 +7,17 @@
 @prefix aggregation:      <http://purl.bioontology.org/ontology/npo#NPO_1967> .
 @prefix pH:               <http://purl.bioontology.org/ontology/npo#NPO_1814> .
 @prefix particleSize:     <http://purl.bioontology.org/ontology/npo#NPO_1694> .
+@prefix particleType:     <http://127.0.0.1/mediawiki/index.php/Particle_Class> .
 @prefix toxicity:         <http://127.0.0.1/mediawiki/index.php/Toxicity> .
 @prefix cytotoxicity:     <http://127.0.0.1/mediawiki/index.php/Cytotoxicity> .
 @prefix oxidationState:   <http://127.0.0.1/mediawiki/index.php/Oxidation_State_Concentration> .
 @prefix surfaceModification: <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> .
 @prefix metalAtomCount:   <http://egonw.github.com/resource/NM_001002> .
 @prefix ldhRelease:       <http://127.0.0.1/mediawiki/index.php/LDH_Release> .
-@prefix exposureContentraion: <http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium> .
+@prefix exposureContentration: <http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium> .
+@prefix logEC50:          <http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50> .
+@prefix ionizationEnthalpy: <http://egonw.github.com/resource/NM_001001> .
+@prefix bioassayReading: <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> .
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause zetaPotential: ;
@@ -46,7 +50,26 @@
    sbdbel:outcome ldhRelease: .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R2> a sbdbel:CausalAssertion ;
-   sbdbel:cause exposureContentraion: ;
+   sbdbel:cause exposureContentration: ;
    sbdbel:relationship sbdbel:changes ;
    sbdbel:outcome ldhRelease: .
 
+<http://127.0.0.1/mediawiki/index.php/Puzyn2011_R1> a sbdbel:CausalAssertion ;
+   sbdbel:cause ionizationEnthalpy: ;
+   sbdbel:relationship sbdbel:decreases ;
+   sbdbel:outcome logEC50: .
+
+<http://127.0.0.1/mediawiki/index.php/Shaw2008_R1> a sbdbel:CausalAssertion ;
+   sbdbel:cause surfaceModification: ;
+   sbdbel:relationship sbdbel:changes ;
+   sbdbel:outcome bioassayReading: .
+
+<http://127.0.0.1/mediawiki/index.php/Shaw2008_R2> a sbdbel:CausalAssertion ;
+   sbdbel:cause particleType: ;
+   sbdbel:relationship sbdbel:changes ;
+   sbdbel:outcome bioassayReading: .
+
+<http://127.0.0.1/mediawiki/index.php/Weissleder146_R1> a sbdbel:CausalAssertion ;
+   sbdbel:cause surfaceModification: ;
+   sbdbel:relationship sbdbel:changes ;
+   sbdbel:outcome bioassayReading: .
