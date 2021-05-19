@@ -1,0 +1,15 @@
+name: Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-rdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: vemonet/jena-riot-action@v3.14
+        with:
+          input: nanowiki.ttl
