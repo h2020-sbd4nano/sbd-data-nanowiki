@@ -10,6 +10,9 @@ jobs:
   validate-rdf:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: main
       - uses: vemonet/jena-riot-action@v3.14
         with:
           input: nanowiki.ttl
