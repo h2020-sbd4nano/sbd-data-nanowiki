@@ -21,32 +21,32 @@
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause zetaPotential: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome aggregation: .
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R2> a sbdbel:CausalAssertion ;
    sbdbel:cause pH: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome zetaPotential: .
 
 <http://127.0.0.1/mediawiki/index.php/Deshpande2005_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:decreases ;
+   sbdbel:relationship sbdbel:negativelyCorrelates ;
    sbdbel:outcome oxidationState: .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome toxicity: .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R2> a sbdbel:CausalAssertion ;
    sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome toxicity: .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome ldhRelease: .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R2> a sbdbel:CausalAssertion ;
@@ -56,20 +56,20 @@
 
 <http://127.0.0.1/mediawiki/index.php/Puzyn2011_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause ionizationEnthalpy: ;
-   sbdbel:relationship sbdbel:decreases ;
+   sbdbel:relationship sbdbel:negativelyCorreclates ;
    sbdbel:outcome logEC50: .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome bioassayReading: .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R2> a sbdbel:CausalAssertion ;
    sbdbel:cause particleType: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome bioassayReading: .
 
 <http://127.0.0.1/mediawiki/index.php/Weissleder146_R1> a sbdbel:CausalAssertion ;
    sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:changes ;
+   sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome bioassayReading: .
