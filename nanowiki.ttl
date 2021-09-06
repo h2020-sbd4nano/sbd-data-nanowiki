@@ -1,6 +1,7 @@
 @prefix void:    <http://rdfs.org/ns/void#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dct:     <http://purl.org/dc/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix sbd:     <https://www.sbd4nano.eu/rdf/#> .
 @prefix sbdbel:  <https://www.sbd4nano.eu/bel/#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
