@@ -29,77 +29,77 @@
  dc:source <https://doi.org/10.6084/m9.figshare.11897205.v1> .
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Berg2009 R1" ;
+   rdfs:label "Berg2009 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause zetaPotential: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome aggregation: .
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R2> a sbdbel:CausalAssertion ;
-   rdfs:label "Berg2009 R2" ;
+   rdfs:label "Berg2009 R2"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause pH: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome zetaPotential: .
 
 <http://127.0.0.1/mediawiki/index.php/Deshpande2005_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Deshpande2005 R1" ;
+   rdfs:label "Deshpande2005 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause particleSize: ;
    sbdbel:relationship sbdbel:negativelyCorrelates ;
    sbdbel:outcome oxidationState: .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Hedberg2010 R1" ;
+   rdfs:label "Hedberg2010 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause particleSize: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome toxicity: .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R2> a sbdbel:CausalAssertion ;
-   rdfs:label "Hedberg2010 R2" ;
+   rdfs:label "Hedberg2010 R2"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause surfaceModification: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome toxicity: .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Prabhu2010 R1" ;
+   rdfs:label "Prabhu2010 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause particleSize: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome ldhRelease: .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R2> a sbdbel:CausalAssertion ;
-   rdfs:label "Prabhu2010 R2" ;
+   rdfs:label "Prabhu2010 R2"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause exposureContentration: ;
    sbdbel:relationship sbdbel:changes ;
    sbdbel:outcome ldhRelease: .
 
 <http://127.0.0.1/mediawiki/index.php/Puzyn2011_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Puzyn2011 R1" ;
+   rdfs:label "Puzyn2011 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause ionizationEnthalpy: ;
    sbdbel:relationship sbdbel:negativelyCorreclates ;
    sbdbel:outcome logEC50: .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Shaw2008 R1" ;
+   rdfs:label "Shaw2008 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause surfaceModification: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome bioassayReading: .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R2> a sbdbel:CausalAssertion ;
-   rdfs:label "Shaw2008 R2" ;
+   rdfs:label "Shaw2008 R2"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause particleType: ;
    sbdbel:relationship sbdbel:correlates ;
    sbdbel:outcome bioassayReading: .
 
 <http://127.0.0.1/mediawiki/index.php/Weissleder146_R1> a sbdbel:CausalAssertion ;
-   rdfs:label "Weissleder146 R1" ;
+   rdfs:label "Weissleder146 R1"@en ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    sbdbel:cause surfaceModification: ;
    sbdbel:relationship sbdbel:correlates ;
