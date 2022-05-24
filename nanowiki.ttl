@@ -23,6 +23,22 @@
 @prefix bioassayReading: <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
+<http://purl.bioontology.org/ontology/npo#NPO_1302> rdfs:label "zeta potential"@en .
+<http://purl.bioontology.org/ontology/npo#NPO_1967> rdfs:label "aggregation"@en .
+<http://purl.bioontology.org/ontology/npo#NPO_1814> rdfs:label "pH"@en .
+<http://purl.bioontology.org/ontology/npo#NPO_1694> rdfs:label "particle size"@en .
+<http://127.0.0.1/mediawiki/index.php/Particle_Class> rdfs:label "particle type"@en .
+<http://127.0.0.1/mediawiki/index.php/Toxicity> rdfs:label "toxicity"@en .
+<http://127.0.0.1/mediawiki/index.php/Cytotoxicity> rdfs:label "cytotoxicity"@en .
+<http://127.0.0.1/mediawiki/index.php/Oxidation_State_Concentration> rdfs:label "oxditation state"@en .
+<http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> rdfs:label "surface modification"@en .
+<http://egonw.github.com/resource/NM_001002> rdfs:label "metal atom count"@en .
+<http://127.0.0.1/mediawiki/index.php/LDH_Release> rdfs:label "LDH release"@en .
+<http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium> rdfs:label "exposure concentration"@en .
+<http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50> rdfs:label "log 1/EC50"@en .
+<http://egonw.github.com/resource/NM_001001> rdfs:label "bioassay reading"@en .
+<http://127.0.0.1/mediawiki/index.php/BioAssayProfile> rdfs:label "bioassay profile"@en .
+
 <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/>
  a                    void:DatasetDescription ;
  dcterms:title        "NanoWiki v6 causal relationships"@en ;
