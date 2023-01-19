@@ -139,27 +139,33 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R1> a sbdbel:CausalAssertion ;
    rdfs:label "Shaw2008 R1"@en ;
+   cito:cites <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_1541 ;
    sbdbel:cause surfaceModification: ;
    sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: .
+   sbdbel:outcome bioassayReading: ;
+   sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay." .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R2> a sbdbel:CausalAssertion ;
    rdfs:label "Shaw2008 R2"@en ;
+   cito:cites <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_1541 ;
    sbdbel:cause particleType: ;
    sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: .
+   sbdbel:outcome bioassayReading: ;
+   sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay." .
 
 <http://127.0.0.1/mediawiki/index.php/Weissleder146_R1> a sbdbel:CausalAssertion ;
    rdfs:label "Weissleder146 R1"@en ;
+   cito:cites <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_707 ;
    sbdbel:cause surfaceModification: ;
    sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: .
+   sbdbel:outcome bioassayReading: ;
+   sbdbel:quote "We have applied a magnetofluorescent nanoparticle library decorated with small molecules to address four critical questions in biomedical nanomaterial research [..] Screening of this library identified a variety of nanomaterials that discriminate among different cell types as well as among different physiologic states of the same cell type." .
