@@ -43,7 +43,7 @@
 <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/>
  a                    void:DatasetDescription ;
  dcterms:title        "NanoWiki v6 causal relationships"@en ;
- foaf:img             <http://www.enanomapper.net/sites/default/files/eNanoMapper_LOGO.png> ;
+ foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
  dc:source <https://doi.org/10.6084/m9.figshare.11897205.v1> .
 
 <http://127.0.0.1/mediawiki/index.php/Berg2009_R1> a sbdbel:CausalAssertion ;
