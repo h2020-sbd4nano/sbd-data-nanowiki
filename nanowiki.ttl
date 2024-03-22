@@ -5,7 +5,7 @@
 @prefix npo:     <http://purl.bioontology.org/ontology/npo#> .
 @prefix sbd:     <https://www.sbd4nano.eu/rdf/#> .
 @prefix sio: <http://semanticscience.org/resource/> .
-@prefix sbdbel:  <https://www.sbd4nano.eu/bel/#> .
+@prefix sbdbel:  <https://h2020-sbd4nano.github.io/sbdbel/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cito:    <http://purl.org/spar/cito/> .
 @prefix zetaPotential:    <http://purl.bioontology.org/ontology/npo#NPO_1302> .
@@ -30,14 +30,14 @@
 <http://purl.bioontology.org/ontology/npo#NPO_1814> rdfs:label "pH"@en .
 <http://purl.bioontology.org/ontology/npo#NPO_1694> rdfs:label "particle size"@en .
 <http://127.0.0.1/mediawiki/index.php/Particle_Class> rdfs:label "particle type"@en .
-<http://127.0.0.1/mediawiki/index.php/Toxicity> rdfs:label "toxicity"@en .
-<http://127.0.0.1/mediawiki/index.php/Cytotoxicity> rdfs:label "cytotoxicity"@en .
+<http://127.0.0.1/mediawiki/index.php/Toxicity> rdfs:label "toxicity"@en ; rdfs:subClassOf enm:ENM_0000018 .
+<http://127.0.0.1/mediawiki/index.php/Cytotoxicity> rdfs:label "cytotoxicity"@en ; rdfs:subClassOf enm:ENM_0000018 .
 <http://127.0.0.1/mediawiki/index.php/Oxidation_State_Concentration> rdfs:label "oxditation state"@en .
 <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> rdfs:label "surface modification"@en .
 <http://egonw.github.com/resource/NM_001002> rdfs:label "metal atom count"@en .
-<http://127.0.0.1/mediawiki/index.php/LDH_Release> rdfs:label "LDH release"@en .
+<http://127.0.0.1/mediawiki/index.php/LDH_Release> rdfs:label "LDH release"@en ; rdfs:subClassOf enm:ENM_0000018 .
 <http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium> rdfs:label "exposure concentration"@en .
-<http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50> rdfs:label "log 1/EC50"@en .
+<http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50> rdfs:label "log 1/EC50"@en ; rdfs:subClassOf enm:ENM_0000018.
 <http://egonw.github.com/resource/NM_001001> rdfs:label "bioassay reading"@en .
 <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> rdfs:label "bioassay profile"@en .
 
@@ -53,9 +53,9 @@
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause zetaPotential: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome aggregation: ;
+   sbdbel:hasCause zetaPotential: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome aggregation: ;
    sbdbel:quote "The isoelectric points (IEP) of the nanoparticles were near neutral with the exception of TiO2 (IEP = 5.19) and Fe2O3 (IEP = 4.24). Nanoparticle agglomerates were largest at the IEP. TiO2 and Fe2O3 increased in zeta potential and agglomerate size over time; while Al2O3 and ZnO displayed little change." .
 
 npo:NPO_1541 rdfs:label "Metal Oxide"@en .
@@ -66,10 +66,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.3109/17435390903276941> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause pH: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome zetaPotential: ;
+   sbdbel:NP npo:NPO_1541 ; sio:000332 npo:NPO_1541 ;
+   sbdbel:hasCause pH: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome zetaPotential: ;
    sbdbel:quote "The isoelectric points (IEP) of the nanoparticles were near neutral with the exception of TiO2 (IEP = 5.19) and Fe2O3 (IEP = 4.24). Nanoparticle agglomerates were largest at the IEP. TiO2 and Fe2O3 increased in zeta potential and agglomerate size over time; while Al2O3 and ZnO displayed little change." .
 
 <http://127.0.0.1/mediawiki/index.php/Deshpande2005_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -77,10 +77,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1063/1.2061873> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:negativelyCorrelates ;
-   sbdbel:outcome oxidationState: ;
+   sbdbel:NP npo:NPO_1541 ; sio:000332 npo:NPO_1541 ;
+   sbdbel:hasCause particleSize: ;
+   sbdbel:hasRelationship sbdbel:negatively_correlates ;
+   sbdbel:hasOutcome oxidationState: ;
    sbdbel:quote "A correlation between the particle size and the lattice parameter has been established in nanocerium oxide particles (3–30nm). The variation in the lattice parameter is attributed to the lattice strain induced by the introduction of Ce3+ due to the formation of oxygen vacancies. Lattice strain was observed to decrease with an increase in the particle size. Ce3+ ions concentration increased from 17% to 44% with the reduction in the particle size." .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -88,10 +88,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1186/1743-8977-7-23> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_707 ;
-   sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome toxicity: ;
+   sbdbel:NP npo:NPO_707 ; sio:000332 npo:NPO_707 ;
+   sbdbel:hasCause particleSize: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome toxicity: ;
    sbdbel:quote "It is evident that particle and alloy characteristics such as particle size and surface composition are important aspects to consider when assessing particle toxicity and metal release from alloy particles compared to pure metal particles." .
 
 <http://127.0.0.1/mediawiki/index.php/Hedberg2010_R2> a sbdbel:CausalAssertion , sio:001183 ;
@@ -99,10 +99,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1186/1743-8977-7-23> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_707 ;
-   sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome toxicity: ;
+   sbdbel:NP npo:NPO_707 ; sio:000332 npo:NPO_707 ;
+   sbdbel:hasCause surfaceModification: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome toxicity: ;
    sbdbel:quote "It is evident that particle and alloy characteristics such as particle size and surface composition are important aspects to consider when assessing particle toxicity and metal release from alloy particles compared to pure metal particles." .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -111,20 +111,21 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_707 ;
-   sbdbel:cause particleSize: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome ldhRelease: ;
+   sbdbel:hasCause particleSize: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome ldhRelease: ;
    sbdbel:quote "LDH and MTS assays revealed that exposure to copper nanoparticles had significant toxic effect with all the sizes tested when compared to unexposed control cultures. Further analysis of the results showed that copper nanoparticles of smaller size and higher concentration exerted the maximum toxic effects." .
 
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R2> a sbdbel:CausalAssertion , sio:001183 ;
    rdfs:label "Prabhu2010 R2"@en ;
    cito:containsAssertionFrom <https://doi.org/10.3109/17435390903337693> ;
+   sio:000339 / owl:sameAs <https://doi.org/10.3109/17435390903337693> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_707 ;
-   sbdbel:cause exposureContentration: ;
-   sbdbel:relationship sbdbel:changes ;
-   sbdbel:outcome ldhRelease: ;
+   sbdbel:NP npo:NPO_707 ; sio:000332 npo:NPO_707 ;
+   sbdbel:hasCause exposureContentration: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome ldhRelease: ;
    sbdbel:quote "LDH and MTS assays revealed that exposure to copper nanoparticles had significant toxic effect with all the sizes tested when compared to unexposed control cultures. Further analysis of the results showed that copper nanoparticles of smaller size and higher concentration exerted the maximum toxic effects." .
 
 <http://127.0.0.1/mediawiki/index.php/Puzyn2011_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -132,10 +133,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1038/nnano.2011.10> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause ionizationEnthalpy: ;
-   sbdbel:relationship sbdbel:negativelyCorreclates ;
-   sbdbel:outcome logEC50: ;
+   sbdbel:NP npo:NPO_1541 ; sio:000332 npo:NPO_1541 ;
+   sbdbel:hasCause ionizationEnthalpy: ;
+   sbdbel:hasRelationship sbdbel:negatively_correlates ;
+   sbdbel:hasOutcome logEC50: ;
    sbdbel:quote "Our results indicate that DHMeþ can be utilized as an efficient descriptor of the chemical stability of metal oxides and, therefore, their cytotoxicity in E. coli in vitro tests. [..] In addition, DHMeþ is also related to the sum of the ionization potentials of a given metal, because the formation of Menþ cations requires sublimation followed by ionization reactions.".
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -143,10 +144,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: ;
+   sbdbel:NP npo:NPO_1541 ; sio:000332 npo:NPO_1541 ;
+   sbdbel:hasCause surfaceModification: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome bioassayReading: ;
    sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay." .
 
 <http://127.0.0.1/mediawiki/index.php/Shaw2008_R2> a sbdbel:CausalAssertion , sio:001183 ;
@@ -154,10 +155,10 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_1541 ;
-   sbdbel:cause particleType: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: ;
+   sbdbel:NP npo:NPO_1541 ; sio:000332 npo:NPO_1541 ;
+   sbdbel:hasCause particleType: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome bioassayReading: ;
    sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay." .
 
 <http://127.0.0.1/mediawiki/index.php/Weissleder146_R1> a sbdbel:CausalAssertion , sio:001183 ;
@@ -165,8 +166,8 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
    cito:containsAssertionFrom <https://doi.org/10.1073/pnas.0802878105> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-   sbdbel:NP npo:NPO_707 ;
-   sbdbel:cause surfaceModification: ;
-   sbdbel:relationship sbdbel:correlates ;
-   sbdbel:outcome bioassayReading: ;
+   sbdbel:NP npo:NPO_707 ; sio:000332 npo:NPO_707 ;
+   sbdbel:hasCause surfaceModification: ;
+   sbdbel:hasRelationship sbdbel:correlates ;
+   sbdbel:hasOutcome bioassayReading: ;
    sbdbel:quote "We have applied a magnetofluorescent nanoparticle library decorated with small molecules to address four critical questions in biomedical nanomaterial research [..] Screening of this library identified a variety of nanomaterials that discriminate among different cell types as well as among different physiologic states of the same cell type." .
