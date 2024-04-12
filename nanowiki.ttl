@@ -120,7 +120,6 @@ npo:NPO_707  rdfs:label "Nanomaterial"@en .
 <http://127.0.0.1/mediawiki/index.php/Prabhu2010_R2> a sbdbel:CausalAssertion , sio:001183 ;
    rdfs:label "Prabhu2010 R2"@en ;
    cito:containsAssertionFrom <https://doi.org/10.3109/17435390903337693> ;
-   sio:000339 / owl:sameAs <https://doi.org/10.3109/17435390903337693> ;
    dc:source <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> ;
    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
    sbdbel:NP npo:NPO_707 ; sio:000332 npo:NPO_707 ;
